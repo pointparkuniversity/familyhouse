@@ -2,11 +2,16 @@
     <string name="app_name">Home</string>
     <string name="linens">Linen Request</string>
     <string name="alerts">Alerts</string>
-    <string name="events">Events Calender</string>
+    <string name="events">Events</string>
     <string name="faq">FAQ</string>
+    <string name="settingsbutton">Go to settings ></string>
     <string name="settings">Settings</string>
-    <string name="settingstext1">Turn on notifications?</string>
+    <string name="settingstext1">Please choose which house you are satying at  to receive important alerts and information about events.</string>
     <string name="settingstext2">Select houses to be notified of their events.</string>
+    <string name="settingstext3">To receive alerts and events, choose a house.</string>
+    <string name="Neville">Neville</string>
+    <string name="ShadySide">Shadyside</string>
+    <string name="UniversityPlace">University Place</string>
     <string-array name="places">
         <item>Neville</item>
         <item>ShadySide</item>
