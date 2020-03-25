@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< Updated upstream
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff41cfb0-2f7d-4f65-8c38-07af806b1c5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c6ad8367-f443-418f-9028-22a12a33a9c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ExpandableLists_Android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExpandableLists_Android/local.properties" afterDir="false" />
     </list>
-=======
-  <component name="ChangeListManager">
-    <list default="true" id="155819ae-8562-496c-af2d-58c8be384e53" name="Default Changelist" comment="" />
->>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< Updated upstream
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,59 +24,38 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1YRNaJ7RrVdpjkV5dxVSkK5NJgu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="android.sdk.path" value="$PROJECT_DIR$/../AppData/Local/Android/Sdk" />
-    <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-=======
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
-        <option value="C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\.idea" />
+        <option value="C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\.idea" />
       </set>
     </option>
   </component>
-  <component name="ProjectId" id="1Zdl7hR7FujxJycAVzlpqSb0BVk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ZaBrkSiLMZ1gRCRbObqUSRkp6P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
->>>>>>> Stashed changes
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-24T16:39:19.619Z" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,7 +69,6 @@
       </list>
     </option>
   </component>
-<<<<<<< Updated upstream
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -162,26 +129,16 @@
       </method>
     </configuration>
   </component>
-=======
->>>>>>> Stashed changes
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< Updated upstream
-      <changelist id="ff41cfb0-2f7d-4f65-8c38-07af806b1c5c" name="Default Changelist" comment="" />
-      <created>1582844164229</created>
+      <changelist id="c6ad8367-f443-418f-9028-22a12a33a9c7" name="Default Changelist" comment="" />
+      <created>1585067525248</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582844164229</updated>
-=======
-      <changelist id="155819ae-8562-496c-af2d-58c8be384e53" name="Default Changelist" comment="" />
-      <created>1585176685290</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1585176685290</updated>
->>>>>>> Stashed changes
+      <updated>1585067525248</updated>
     </task>
     <servers />
   </component>
@@ -197,38 +154,5 @@
         </entry>
       </map>
     </option>
-<<<<<<< Updated upstream
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-=======
->>>>>>> Stashed changes
   </component>
 </project>

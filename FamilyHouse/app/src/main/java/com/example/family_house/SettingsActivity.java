@@ -12,10 +12,10 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_main);
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.places2);
+        Spinner mySpinner = (Spinner) findViewById(R.id.places);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(SettingsActivity.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.places2));
+                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.places));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
     }
