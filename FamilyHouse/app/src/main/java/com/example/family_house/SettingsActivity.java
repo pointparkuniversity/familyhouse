@@ -1,22 +1,30 @@
 package com.example.family_house;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.view.View;
+import android.widget.Button;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+
+
 public class SettingsActivity extends AppCompatActivity {
+    public Button button10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_main);
-
-        Spinner mySpinner = (Spinner) findViewById(R.id.places);
-
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(SettingsActivity.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.places));
-        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
+        super.onCreate(savedInstanceState);
+        button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
