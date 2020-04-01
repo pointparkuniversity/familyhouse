@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="128aa76a-7387-4af8-80a5-c77cded8f93c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/FamilyHouse/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyHouse/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Android_Sandbox.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Android_Sandbox.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExpandableLists_Android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ExpandableLists_Android/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FamilyHouse/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyHouse/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FamilyHouse/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FamilyHouse/app/app.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +18,7 @@
   </component>
   <component name="ProjectId" id="1ZaBjqNc3417FsLNqsrEgxOFn0X" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FamilyHouse/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FamilyHouse" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,7 +50,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

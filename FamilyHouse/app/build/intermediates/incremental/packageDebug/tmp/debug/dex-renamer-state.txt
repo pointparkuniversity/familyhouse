@@ -1,7 +1,7 @@
-#Wed Mar 25 19:05:21 EDT 2020
+#Wed Apr 01 11:09:36 EDT 2020
 base.0=C\:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
-renamed.1=classes4.dex
+renamed.1=classes2.dex
 path.0=classes.dex
-renamed.0=classes3.dex
+renamed.0=classes.dex
 base.1=C\:\\Users\\rilou\\Documents\\GitHub\\Android_Sandbox\\FamilyHouse\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
