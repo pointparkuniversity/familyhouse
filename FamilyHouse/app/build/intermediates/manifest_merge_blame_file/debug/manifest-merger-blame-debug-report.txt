@@ -19,7 +19,7 @@
 14        android:allowBackup="true"
 14-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.1.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\1cd7eff88f5e86d0249af2958bf465f0\core-1.1.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.1.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
 17-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:7:9-43
