@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\ea88890b09526096266c9c16859169ae\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\cb3ee0668a2ccffbec6ced598c9d8e79\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\749c232115217351c91aa74c2d78bd12\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -25,20 +25,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\rilou\.gradle\ca
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\1e517e060e22e5750a896c56d451ab07\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\8909bb9e572b85a1aed6ea82735a7b78\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\2541981a540b257b4ca2e11e0b5e803f\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:2:11-69
@@ -47,7 +47,7 @@ ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\m
 	android:name
 		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:5:5-39:19
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:5:5-57:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\cb3ee0668a2ccffbec6ced598c9d8e79\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\cb3ee0668a2ccffbec6ced598c9d8e79\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\rilou\.gradle\caches\transforms-2\files-2.1\da95e0dd41fd0c634661df2a0f122634\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -120,6 +120,24 @@ action#android.intent.action.ALERT
 ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
 		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:25-67
+activity#com.example.family_house.FAQActivity
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:39:9-44:20
+	android:name
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:39:19-46
+intent-filter#action:name:android.intent.action.APPLICATION_PREFERENCES+category:name:android.intent.category.INFO
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:40:9-43:25
+action#android.intent.action.APPLICATION_PREFERENCES
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:13-83
+	android:name
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:21-81
+activity#com.example.family_house.LinensActivity
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:45:9-50:20
+	android:name
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:45:19-49
+activity#com.example.family_house.ContactActivity
+ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:51:9-56:20
+	android:name
+		ADDED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:51:19-50
 uses-sdk
 INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml

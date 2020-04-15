@@ -15,7 +15,7 @@
 11-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:4:22-64
 12
 13    <application
-13-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:5:5-39:19
+13-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:5:5-57:19
 14        android:allowBackup="true"
 14-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:6:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,65 +29,106 @@
 19-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:9:9-54
 20        android:supportsRtl="true"
 20-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:10:9-35
-21        android:testOnly="true"
-22        android:theme="@style/AppTheme" >
-22-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:11:9-40
-23        <activity android:name="com.example.family_house.MainActivity" >
-23-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:12:9-18:20
-23-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:12:19-47
-24            <intent-filter>
-24-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:13:13-17:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:14:17-69
-25-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:14:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:16:17-77
-27-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:16:27-74
-28            </intent-filter>
-29        </activity>
-30        <activity android:name="com.example.family_house.EventActivity" >
-30-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:19:9-25:20
-30-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:19:19-48
-31            <intent-filter>
-31-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:21:1-24:17
-32                <action android:name="android.intent.action.EVENT" />
-32-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:22:1-53
-32-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:22:9-51
-33
-34                <category android:name="android.intent.category.INFO" />
-34-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
-34-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
-35            </intent-filter>
-36        </activity>
-37        <activity android:name="com.example.family_house.SettingsActivity" >
-37-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:26:9-32:20
-37-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:26:19-51
-38            <intent-filter>
-38-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:27:13-30:29
-39                <action android:name="android.intent.action.SETTINGS" />
-39-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:28:17-72
-39-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:28:25-70
-40
-41                <category android:name="android.intent.category.PREFERENCE" />
-41-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:29:21-82
-41-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:29:31-80
-42            </intent-filter>
-43        </activity>
-44        <activity android:name="com.example.family_house.AlertActivity" >
-44-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:33:9-38:20
-44-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:33:19-48
-45            <intent-filter>
-45-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:34:13-37:29
-46                <action android:name="android.intent.action.ALERT" />
-46-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:17-69
-46-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:25-67
-47
-48                <category android:name="android.intent.category.INFO" />
-48-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
-48-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
-49            </intent-filter>
-50        </activity>
-51    </application>
-52
-53</manifest>
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.family_house.MainActivity" >
+22-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:12:9-18:20
+22-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:12:19-47
+23            <intent-filter>
+23-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:13:13-17:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:14:17-69
+24-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:14:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:16:17-77
+26-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:16:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity android:name="com.example.family_house.EventActivity" >
+29-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:19:9-25:20
+29-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:19:19-48
+30            <intent-filter>
+30-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:21:1-24:17
+31                <action android:name="android.intent.action.EVENT" />
+31-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:22:1-53
+31-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:22:9-51
+32
+33                <category android:name="android.intent.category.INFO" />
+33-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
+33-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
+34            </intent-filter>
+35        </activity>
+36        <activity android:name="com.example.family_house.SettingsActivity" >
+36-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:26:9-32:20
+36-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:26:19-51
+37            <intent-filter>
+37-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:27:13-30:29
+38                <action android:name="android.intent.action.SETTINGS" />
+38-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:28:17-72
+38-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:28:25-70
+39
+40                <category android:name="android.intent.category.PREFERENCE" />
+40-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:29:21-82
+40-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:29:31-80
+41            </intent-filter>
+42        </activity>
+43        <activity android:name="com.example.family_house.AlertActivity" >
+43-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:33:9-38:20
+43-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:33:19-48
+44            <intent-filter>
+44-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:34:13-37:29
+45                <action android:name="android.intent.action.ALERT" />
+45-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:17-69
+45-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:35:25-67
+46
+47                <category android:name="android.intent.category.INFO" />
+47-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
+47-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
+48            </intent-filter>
+49        </activity>
+50        <activity android:name="com.example.family_house.FAQActivity" >
+50-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:39:9-44:20
+50-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:39:19-46
+51            <intent-filter>
+51-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:40:9-43:25
+52                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+52-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:13-83
+52-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:21-81
+53
+54                <category android:name="android.intent.category.INFO" />
+54-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
+54-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
+55            </intent-filter>
+56        </activity>
+57        <activity android:name="com.example.family_house.LinensActivity" >
+57-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:45:9-50:20
+57-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:45:19-49
+58            <intent-filter>
+58-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:40:9-43:25
+59                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+59-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:13-83
+59-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:21-81
+60
+61                <category android:name="android.intent.category.INFO" />
+61-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
+61-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
+62            </intent-filter>
+63        </activity>
+64        <activity android:name="com.example.family_house.ContactActivity" >
+64-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:51:9-56:20
+64-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:51:19-50
+65            <intent-filter>
+65-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:40:9-43:25
+66                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+66-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:13-83
+66-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:41:21-81
+67
+68                <category android:name="android.intent.category.INFO" />
+68-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:13-68
+68-->C:\Users\rilou\Documents\GitHub\Android_Sandbox\FamilyHouse\app\src\main\AndroidManifest.xml:23:23-66
+69            </intent-filter>
+70        </activity>
+71    </application>
+72
+73</manifest>

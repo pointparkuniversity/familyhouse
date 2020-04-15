@@ -23,6 +23,7 @@
         <item>ShadySide</item>
         <item>University Place</item>
     </string-array>
+    <string name="general">General</string>
     <string name="dropdown1">Select Your House</string>
     <string name="upcoming_events">Upcoming Events!</string>
 </resources>
