@@ -13,5 +13,5 @@ mkdir -p tmp
 
 # redirect output to log and save pid
 {
-./bin/keeprunning.sh /usr/local/bin/nodemon index.js
+./bin/keeprunning.sh /usr/local/bin/nodemon index.js < /dev/null
 } >> log/$DATE.txt 2>&1
