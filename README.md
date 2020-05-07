@@ -82,11 +82,11 @@ Posting a Message in PostMan:
 - URL to send a Post Message as per Rest End Points
 - JSON Message based on what is able to be sent to the route
 
-- How to test the sending of messages via PostMan
+## How to test the sending of messages via PostMan
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_Postman_.png)
 
-- Required headers
+## Required Headers
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/notifications_headers.png)
 
-- Successful Message when a notification is sent
+## Successful Message when a notification is sent
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_SuccessMsgSent.png)
