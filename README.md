@@ -82,4 +82,4 @@ Posting a Message in PostMan:
 - URL to send a Post Message as per Rest End Points
 - JSON Message based on what is able to be sent to the route
 - Callback Message from the service that the message was accepted
-
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_Postman_.png)
