@@ -86,7 +86,7 @@ Posting a Message in PostMan:
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_Postman_.png)
 
 ## Required Headers
-![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/notifications_headers.png)
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_Headers.png)
 
 ## Successful Message when a notification is sent
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_SuccessMsgSent.png)
