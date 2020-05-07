@@ -20,27 +20,8 @@ Body-Parser
 Rest-Api
 Node-Scheduler
 ```
-
-# Services
-## **Family House Rest End Points** /
-
-*List a single entry selected at random*
-
-### Rest End Points
-Route | Method | Description
-| --- | --- | --- 
-| /api/v1/faq | GET| Captures all of the FAQ Data | 
-| /api/v1/faq:/faqid | GET| Captures all of the FAQ Data by id number| 
-| /api/v1/linens | GET | Captures all of the Linens Data | 
-| /api/v1/linens:/linenid | GET | Captures all of the Linens Data by linenid number | 
-| /api/v1/events | GET | Captures all of the Events Data | 
-| /api/v1/events:/eventid | GET | Captures all of the Events Data by eventid number | 
-| /api/v1/linens | POST | Add new linen data (HouseName, RoomNumber, Guests, LinenType) | 
-| /api/v1/events | POST | Add new event data(Data Category, Location & Message) | 
-| /api/v1/events:/eventid | PUT | Updates the DateCategory, Location and or Message by eventid| 
-
-
 ## Scheduler
+```
 var schedule = require('node-schedule');
 var year = 2020;
 var month = 04; //0=Jan,1=Feb,2=Mar,3=Apr,4=May etc;
@@ -54,7 +35,7 @@ var j = schedule.scheduleJob(date, function(){
   console.log('Sent Notification');
   sendNotification(message);
 });
-
+```
 Variables:
 
 ```
@@ -92,6 +73,8 @@ Message to be sent as notificiation:
   app_id: appid,    // AppID
   contents: {"en": "Point Park Students are at the kitchen"}, // Title of the message
   headings: {"en": "Meet the Point Park Staff"},  // Body of the notification message
+  ios_attachments: {"id1": "https://familyhouse.it.pointpark.edu/images/sammy.png"}, //Send Image with notification
+	url: "https://familyhouse.org", //URL originates from
   included_segments: ["All"]  // Who will receive the messages. All = All subscribers
 };
 ```
