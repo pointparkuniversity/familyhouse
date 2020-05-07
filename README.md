@@ -90,3 +90,6 @@ Posting a Message in PostMan:
 
 ## Successful Message when a notification is sent
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/Notifications_SuccessMsgSent.png)
+
+## Successful Message received from an iphone
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/IOSN.jpg)
