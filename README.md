@@ -1,4 +1,4 @@
-# Notifications to be sent to the IOS App from NodeJS
+# Notifications to be sent to the IOS & Android App from NodeJS
 This serves as an example of multiple things.
 - How to send notifications via NodeJS to the service
 - How to use node scheduler to schedule a notification to be sent based on the date and time of day
@@ -78,6 +78,11 @@ Message to be sent as notificiation:
   included_segments: ["All"]  // Who will receive the messages. All = All subscribers
 };
 ```
+Sending a message to an Android Device: (Adding another section that allows this to use Authorization/App_ID. The id will be differ betweeen two OS (IOS/Android)
+```
+ var headers = { "Authorization": "Input your Android API Key here"
+ var message = { app_id: "Android App ID Key"
+```
 Posting a Message in PostMan:
 - URL to send a Post Message as per Rest End Points
 - JSON Message based on what is able to be sent to the route
@@ -93,3 +98,12 @@ Posting a Message in PostMan:
 
 ## Successful Message received from an iphone
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/IOSN.jpg)
+
+## Successful Message received from an Android
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot1.png)
+
+## Successful Message received from an Android
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot2.png)
+
+## Successful Message received from an Android
+![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot3.png)
