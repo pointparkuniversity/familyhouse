@@ -103,7 +103,5 @@ Posting a Message in PostMan:
 ![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot1.png)
 
 ## Successful Message received from an Android
-![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot2.png)
+![Notifications PostMan Post Example](http://familyhouse.it.pointpark.edu/images/androidnotification.png)
 
-## Successful Message received from an Android
-![Notifications PostMan Post Example](https://familyhouse.it.pointpark.edu/images/AndroidNot3.png)
