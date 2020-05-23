@@ -11,7 +11,9 @@ cd $(dirname "$0")/..
 mkdir -p log
 mkdir -p tmp
 
-# redirect output to log and save pid
+# redirect output to log
 {
-./bin/keeprunning.sh /usr/local/bin/nodemon index.js < /dev/null
+
+/usr/local/bin/nodemon -x 'node index.js || touch index.js' < /dev/null
+
 } >> log/$DATE.txt 2>&1
