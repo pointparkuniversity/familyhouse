@@ -501,7 +501,7 @@ app.post('/api/v1/linens_request', function(req, res) {
     bluebag: req.body.bluebag,
     date: req.body.date,
     twinsheets: req.body.twinsheets,
-    queemsheets: req.body.queensheets,
+    queensheets: req.body.queensheets,
     pillowcases: req.body.pillowcases,
     isServed: req.body.isServed,
     phoneID: req.body.phoneID
