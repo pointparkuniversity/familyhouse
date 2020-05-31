@@ -98,6 +98,8 @@ function isAuthenticated(req, res, next) {
 
 
 app.use(function(req, res, next){
+  // log the url
+  console.log(new Date().toLocaleString() + ": " + (req.session.username?req.session.username:"anonymous") + ": " + req.method + ": " + req.url);
   // all the stuff from the example
   if (req.session.username) {
     res.locals.username = req.session.username
@@ -145,7 +147,6 @@ Alerts Pages Routing
 ****************/
 app.get('/alerts', isAuthenticated, function(req, res) {
     GET_Alerts.getAllAlerts(function(alerts){
-      console.log(alerts)
         res.render('Alerts/alerts', {
             alerts  :  alerts['content'],
             user    : req.session.username
@@ -251,7 +252,6 @@ Event Pages Routing
 ****************/
 app.get('/events', isAuthenticated, function(req, res) {
     GET_Events.getAllEvents(function(events){
-        //console.log(events['content']);
         res.render('Events/events', {
             events  :  events['content'],
             user    : req.session.username
@@ -265,7 +265,6 @@ app.get('/events/:Id', isAuthenticated, function(req, res) {
     var Id = req.params.Id;
     GET_Events.getEventData(Id, function(data){
         GET_Events.getEventAlerts(Id, function(event_alerts){
-            console.log(event_alerts);
             res.render('Events/event-details', {
                 event : data.content[0],
                 alerts : event_alerts.content,
@@ -274,8 +273,6 @@ app.get('/events/:Id', isAuthenticated, function(req, res) {
                 bad : req.session.faq_update_bad,
             });
         });
-        console.log(data.content[0]);
-
     })
 
 });
@@ -286,8 +283,6 @@ app.post('/save_event_details', (req, res) => {
     var house = req.body.house;
     var Id =  req.body.Id;
     var user = req.body.user;
-    console.log(Id);
-
     POST_Event.save_details(name, content, house, Id, user, function(status, message){
         if(status == true){
             res.redirect("/events/" + Id);
@@ -298,9 +293,6 @@ app.post('/save_event_details', (req, res) => {
 
         }
     });
-
-
-
 });
 
 
@@ -359,7 +351,6 @@ app.get('/notifications', isAuthenticated, function(req, res) {
 app.post('/sendpushnotification', (req, res) => {
   const event = req.body.notification_type;
   const alert = req.body.select_house;
-  console.log(event);
   res.redirect('/notifications')
 });
 
@@ -483,7 +474,7 @@ app.post('/api/v1/linens_request', function(req, res) {
     [linen.house, linen.room, linen.guests, linen.towels, linen.washcloths, linen.bathmats, linen.bluebag, linen.date, linen.twinsheets, linen.queensheets, linen.pillowcases, linen.isServed, linen.phoneID],
     function (err, headers, fields) {
       if (err){
-        console.log(err);
+        console.log("ERROR: /api/v1/linens_request: " + err);
         callback(err);
       } else {
         callback();
@@ -510,7 +501,6 @@ app.post('/api/v1/linens_request', function(req, res) {
       res.status(500);
       res.render('500');
     } else {
-      console.log("done");
       res.status(200);
       res.send('ok');
     }
@@ -526,7 +516,7 @@ app.get('/api/v1/faq', function(req, res) {
   connection.query('SELECT * FROM faq, faq_sections WHERE faq.section_Id = faq_sections.Id',
     function(err, data, fields) {
       if (err) {
-        console.log(err);
+        console.log("ERROR: /api/v1/faq: " + err);
         res.status(500);
         res.render('500');
       }
@@ -552,7 +542,6 @@ app.get('/api/v1/faq', function(req, res) {
             });
           //}
         }
-        console.log(sections);
         for (var key in sections) {
           result.push(sections[key]);
         }
@@ -569,7 +558,6 @@ app.get('/api/v1/events', function(req, res) {
 
 app.post('/create_notification', function(req, res) {
   var message = req.body.message;
-  console.log("Message is: " + message);
   res.redirect("/thank-you");
 });
 
@@ -608,7 +596,6 @@ app.post('/regi', function(req, res) {
       				req.session.loggedin = true;
       				req.session.username = username;
               req.session.user_ID = results[0].ID;
-              console.log(req.session.user_ID);
       				res.redirect(303, '/');
       			} else {
               res.locals.message = "There seems to be an error.";
@@ -634,7 +621,6 @@ app.post('/auth', function(req, res) {
         req.session.loggedin = true;
         req.session.username = username;
         req.session.user_ID = results[0].ID;
-        console.log(req.session.user_ID);
         res.redirect(303,'/');
       } else {
         res.locals.message = "There seems to be an error.";
@@ -663,7 +649,7 @@ app.use(function(req, res, next){
 
 /* 500 Error Page */
 app.use(function(err, req, res, next){
-  console.log(err.stack);
+  console.log("ERROR: 500: " + err.stack);
   res.status(500);
   res.render('500');
 });
