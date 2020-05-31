@@ -556,6 +556,12 @@ app.get('/api/v1/events', function(req, res) {
   });
 });
 
+app.get('/api/v1/alerts', function(req, res) {
+  GET_Alerts.getAllAlerts(function(alerts){
+    res.send(alerts['content']);
+  });
+});
+
 app.post('/create_notification', function(req, res) {
   var message = req.body.message;
   res.redirect("/thank-you");
