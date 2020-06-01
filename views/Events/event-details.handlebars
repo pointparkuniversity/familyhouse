@@ -16,15 +16,17 @@
                     <button type="submit" value="submit" class="btn family_house_color_schema" style="float: right;">Save</button>
                     <h4 for="title">{{ event.title }}, {{ event.event_date }}</h4> <br />
                     <input class="form-control" type="text" name="title" value="{{ event.title }}" /><br />
-                    <h4>Event Content</h4><br />
+                    <h4>Event Content</h4>
                     <textarea style="min-height: 400px;" name="content" class="form-control" placeholder="Event Content">{{ event.content }}</textarea><br />
-                    <h4>House</h4> <br />
+                    <h4>House</h4>
                     <select class="custom-select mr-sm-2 form-control" name="house">
                        <option value="4" selected>All Houses</option>
                        <option value="1">Neville</option>
                        <option value="2">Shadyside</option>
                        <option value="3">University Place</option>
-                   </select> <br />
+                   </select> <br /><br />
+                   <h4>Attach Picture</h4>
+                   <input class="form-control" type="file" name="file" /><br />
                 </form>
             </div>
         </div>

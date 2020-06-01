@@ -56,7 +56,14 @@
                  <div class="form-row">
                     <div class="col-sm-6 col-xs-12">
                         <label for="title">Alert Title</label>
-                        <input type="text" name="title" class="form-control" placeholder="Alert Title" />
+                        <div>
+                          <a href="javascript:addIcon('❄️')">❄️</a>
+                          <a href="javascript:addIcon('🌧')">🌧</a>
+                          <a href="javascript:addIcon('🚐')">🚐</a>
+                          <a href="javascript:addIcon('⚠️')">⚠️</a>
+                          <a href="javascript:addIcon('🔔')">🔔</a>
+                        </div>
+                        <input id="alert_title_13" type="text" name="title" class="form-control" placeholder="Alert Title" />
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <label for="house">House</label>
@@ -174,5 +181,9 @@ $(document).ready( function () {
         triggermessage("danger", data['message']);
       }
     });
+  }
+
+  function addIcon(arg) {
+    $("#alert_title_13").val($("#alert_title_13").val()+arg);
   }
 </script>

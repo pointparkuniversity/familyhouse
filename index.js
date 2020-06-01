@@ -87,22 +87,21 @@ app.locals.nav = GLOBALS.nav_items();
 /* Where we set the port for the app */
 app.set('port', process.env.PORT || 3100);
 
-
 function isAuthenticated(req, res, next) {
-  if (req.session.username)
+  if (req.session.username) {
       return next();
-
+  }
   // IF A USER ISN'T LOGGED IN, THEN REDIRECT THEM SOMEWHERE
   res.redirect('/login');
 }
-
 
 app.use(function(req, res, next){
   // log the url
   console.log(new Date().toLocaleString() + ": " + (req.session.username?req.session.username:"anonymous") + ": " + req.method + ": " + req.url);
   // all the stuff from the example
   if (req.session.username) {
-    res.locals.username = req.session.username
+    res.locals.username = req.session.username;
+    res.locals.admin = req.session.admin;
   }
   next();
 });
@@ -156,7 +155,7 @@ app.get('/alerts', isAuthenticated, function(req, res) {
 
 });
 
-app.post('/delete_alert', function(req, res) {
+app.post('/delete_alert', isAuthenticated, function(req, res) {
     /* DELETE_Faq*/
     var Id = req.body.Id;
     DELETE_Alerts.delete_alerts(Id, function(status, message){
@@ -182,7 +181,7 @@ app.get('/alerts/:Id', isAuthenticated, function(req, res) {
 
 });
 */
-app.post('/create_alert', (req, res) => {
+app.post('/create_alert', isAuthenticated, (req, res) => {
     var title = req.body.title;
     var house_Id = req.body.house;
     var date = req.body.alert_date;
@@ -198,7 +197,7 @@ app.post('/create_alert', (req, res) => {
     });
 });
 
-app.post('/create_alert_event', (req, res) => {
+app.post('/create_alert_event', isAuthenticated, (req, res) => {
     var title = req.body.title;
     var house_Id = req.body.house;
     var date = req.body.alert_date;
@@ -215,9 +214,7 @@ app.post('/create_alert_event', (req, res) => {
     });
 });
 
-
-
-app.post('/delete_alerts', function(req, res) {
+app.post('/delete_alerts', isAuthenticated, function(req, res) {
     /* DELETE_Faq*/
     var Id = req.body.Id;
     DELETE_Alerts.delete_alerts(Id, function(status, message){
@@ -227,9 +224,9 @@ app.post('/delete_alerts', function(req, res) {
             res.json({ status: false, message: message });
         }
     });
-
 });
-app.post('/delete_even_alert', function(req, res) {
+
+app.post('/delete_even_alert', isAuthenticated, function(req, res) {
     /* DELETE_Faq*/
     var Id = req.body.Id;
     DELETE_Alerts.delete_alerts(Id, function(status, message){
@@ -277,7 +274,7 @@ app.get('/events/:Id', isAuthenticated, function(req, res) {
 
 });
 
-app.post('/save_event_details', (req, res) => {
+app.post('/save_event_details', isAuthenticated, (req, res) => {
     var name = req.body.title;
     var content = req.body.content;
     var house = req.body.house;
@@ -296,7 +293,7 @@ app.post('/save_event_details', (req, res) => {
 });
 
 
-app.post('/create_event', (req, res) => {
+app.post('/create_event', isAuthenticated, (req, res) => {
     var name = req.body.name;
     var date = req.body.event_date;
     var user = req.body.user;
@@ -312,7 +309,7 @@ app.post('/create_event', (req, res) => {
 /**********
 End Events
 **********/
-app.post('/delete_events', function(req, res) {
+app.post('/delete_events', isAuthenticated, function(req, res) {
     /* DELETE_Faq*/
     var Id = req.body.Id;
     DELETE_Events.delete_events(Id, function(status, message){
@@ -325,7 +322,7 @@ app.post('/delete_events', function(req, res) {
 
 });
 
-app.post('/create_faq', function(req, res) {
+app.post('/create_faq', isAuthenticated, function(req, res) {
     var section = req.body.section;
     var answer = req.body.answer;
     var question = req.body.question;
@@ -348,7 +345,7 @@ app.get('/notifications', isAuthenticated, function(req, res) {
   });
 });
 
-app.post('/sendpushnotification', (req, res) => {
+app.post('/sendpushnotification', isAuthenticated, (req, res) => {
   const event = req.body.notification_type;
   const alert = req.body.select_house;
   res.redirect('/notifications')
@@ -356,7 +353,7 @@ app.post('/sendpushnotification', (req, res) => {
 
 
 
-app.post('/serve_linen_request', (req, res) => {
+app.post('/serve_linen_request', isAuthenticated, (req, res) => {
 	POST_linen.serve(req['body']['Id'], function(status){
 		if(status == true){
 			res.send(true);
@@ -416,8 +413,7 @@ app.get('/faq', isAuthenticated, function(req, res){
 
 });
 
-
-app.post('/save_faq', function(req, res) {
+app.post('/save_faq', isAuthenticated, function(req, res) {
 	var questions = req.body.question;
 	var answers =  req.body.answer;
 	var Ids  = req.body.Id;
@@ -440,7 +436,7 @@ app.post('/save_faq', function(req, res) {
 
 });
 
-app.post('/delete_faq', function(req, res) {
+app.post('/delete_faq', isAuthenticated, function(req, res) {
     /* DELETE_Faq*/
     var Id = req.body.Id;
     DELETE_Faq.delete_faq(Id, function(status, message){
@@ -450,9 +446,9 @@ app.post('/delete_faq', function(req, res) {
             res.json({ status: false, message: message });
         }
     });
-
 });
-app.post('/delete_event', function(req, res) {
+
+app.post('/delete_event', isAuthenticated, function(req, res) {
     /* DELETE_Event*/
     var Id = req.body.Id;
     DELETE_Event.delete_event(Id, function(status, message){
@@ -562,7 +558,7 @@ app.get('/api/v1/alerts', function(req, res) {
   });
 });
 
-app.post('/create_notification', function(req, res) {
+app.post('/create_notification', isAuthenticated, function(req, res) {
   var message = req.body.message;
   res.redirect("/thank-you");
 });
@@ -577,7 +573,7 @@ app.get('/register', isAuthenticated, function(req, res) {
   });
 });
 
-app.get('/changepassword', function(req, res) {
+app.get('/changepassword', isAuthenticated, function(req, res) {
   res.render('changepassword', {
   });
 });
@@ -618,27 +614,30 @@ app.post('/regi', function(req, res) {
   });
 
 app.post('/auth', function(req, res) {
-	var username = req.body.username;
-	var password = req.body.password;
-	if (username && password) {
+  var username = req.body.username;
+  var password = req.body.password;
+  if (username && password) {
     var conn = mysql.createConnection(sql);
-		conn.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(err, results, rows, fields) {
+    conn.query('SELECT * FROM users WHERE username = ? AND password = ?', [username, password], function(err, results, rows, fields) {
       if (results.length > 0) {
         req.session.loggedin = true;
         req.session.username = username;
         req.session.user_ID = results[0].ID;
+        req.session.admin = results[0].admin;
         res.redirect(303,'/');
-      } else {
+      }
+      else {
         res.locals.message = "There seems to be an error.";
         res.redirect(303, '/login?error='+err);
       }
-			res.end();
-		});
-	} else {
+      res.end();
+    });
+  }
+  else {
     res.locals.message = "There seems to be an error.";
     res.redirect(303, '/login?error='+err);
-		res.end();
-	}
+    res.end();
+  }
 });
 
 app.get('/logout', function(req, res){

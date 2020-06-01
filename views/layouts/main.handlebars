@@ -42,12 +42,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         {{#if username}}
-			{{#each nav}}
-         		 <li class="nav-item">
-               		 <a class="nav-link" href="{{ link }}">{{ name }}</a>
-           		 </li>
-			{{/each}}
-
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/linen">Linen</a></li>
+        {{#if admin}}
+        <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+        {{/if}}
+        <li class="nav-item"><a class="nav-link" href="/events">Event</a></li>
+        <li class="nav-item"><a class="nav-link" href="/alerts">Alerts</a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="/analytics">Analytics</a></li>-->
 
 		</ul>
 		<ul class="navbar-nav ml-auto">
