@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+#set -e
 
 export LANG=en_US.UTF-8
 export NODE_PATH=/usr/local/lib/node_modules
@@ -14,6 +14,11 @@ mkdir -p tmp
 # redirect output to log
 {
 
+while true
+do
+
 /usr/local/bin/nodemon -x 'node index.js || touch index.js' < /dev/null
+
+done
 
 } >> log/$DATE.txt 2>&1
