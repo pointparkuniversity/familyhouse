@@ -1,0 +1,7 @@
+/node_modules
+settings.js
+package-lock.json
+node.core
+.env
+/modulefour
+log/
