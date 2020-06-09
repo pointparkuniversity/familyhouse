@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "105521119392",
+    "firebase_url": "https://familyhouse-fce6b.firebaseio.com",
+    "project_id": "familyhouse-fce6b",
+    "storage_bucket": "familyhouse-fce6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105521119392:android:b3232e1b4299c1405d49c5",
+        "android_client_info": {
+          "package_name": "com.ppu.familyhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105521119392-852vp09q531rv4856714ahjqjbotll2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ppu.familyhouse",
+            "certificate_hash": "a4f42b6e6f74987cc5bcf4e2b26c7128c8289161"
+          }
+        },
+        {
+          "client_id": "105521119392-95ovndgs7avvsb8lk33c9o43sseto6pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnvJTpA-YTQXMvghZ5CnAKIH8H4FdIRaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105521119392-95ovndgs7avvsb8lk33c9o43sseto6pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
