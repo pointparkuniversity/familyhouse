@@ -168,7 +168,7 @@
         app:layout_constraintVertical_bias="0.619" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnFAQ"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
@@ -183,7 +183,7 @@
         app:layout_constraintVertical_bias="0.619" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnEvents"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
@@ -212,7 +212,7 @@
         app:layout_constraintVertical_bias="0.541" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnAlerts"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"
@@ -281,7 +281,7 @@
         app:layout_constraintVertical_bias="0.045" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLinens"
         android:layout_width="203dp"
         android:layout_height="64dp"
         android:background="#71E3D8"
@@ -373,7 +373,7 @@
         app:layout_constraintVertical_bias="0.381" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSettings"
         android:layout_width="40dp"
         android:layout_height="42dp"
         android:backgroundTint="#AEB7B6"

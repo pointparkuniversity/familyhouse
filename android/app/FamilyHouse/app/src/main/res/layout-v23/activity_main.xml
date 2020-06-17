@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnFAQ"
         android:layout_width="419dp"
         android:layout_height="131dp"
         android:backgroundTint="#d8bf49"
@@ -15,13 +15,13 @@
         android:textAlignment="center"
         android:textColor="#fffdf9"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnLinens"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEvents" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnAlerts"
         android:layout_width="423dp"
         android:layout_height="133dp"
         android:backgroundTint="#e26666"
@@ -32,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSettings" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLinens"
         android:layout_width="420dp"
         android:layout_height="132dp"
         android:backgroundTint="#6fd1be"
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnEvents"
         android:layout_width="418dp"
         android:layout_height="122dp"
         android:backgroundTint="#39b4d1"
@@ -56,41 +56,25 @@
         android:textAlignment="center"
         android:textColor="#fffdf9"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintBottom_toTopOf="@+id/btnFAQ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAlerts" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="46dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="525dp"
-        android:background="#4E5151"
-        android:foreground="@drawable/phone"
-        android:onClick="@string/settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736"
-        tools:targetApi="m" />
-
-    <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSettings"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="426dp"
         android:layout_height="112dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#474545"
         android:text="@string/settingsbutton"
+        android:textColor="#fffdf9"
         android:textAlignment="viewEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textDirection="firstStrongRtl"
         android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlerts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"

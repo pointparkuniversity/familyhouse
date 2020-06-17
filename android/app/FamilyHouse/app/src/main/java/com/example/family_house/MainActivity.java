@@ -2,78 +2,72 @@ package com.example.family_house;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
-    public Button button3;
-    public Button button6;
-    public Button button7;
-    public Button button8;
+
+
+    private Button btnLinens;
+    private Button btnContact;
+    private Button btnFAQ;
+    private Button btnEvents;
+    private Button btnAlerts;
+    private Button btnSettings;
     public Button button;
-    public Button button4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
+
+        //Settings Button on the Main Activity Screen
+        btnSettings = (Button) findViewById(R.id.btnSettings);
+        btnSettings.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,ContactActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             }
         });
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        //Linens Button on the Main Activity Screen
+        btnLinens = (Button) findViewById(R.id.btnLinens);
+        btnLinens.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,LinensActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LinensActivity.class));
+            }
+        });
+
+        //Alerts
+        btnAlerts = (Button) findViewById(R.id.btnAlerts);
+        btnAlerts.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, AlertActivity.class));
+            }
+        });
+
+        //Events
+        btnEvents = (Button) findViewById(R.id.btnEvents);
+        btnEvents.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, EventActivity.class));
+            }
+        });
+
+        //FAQ
+        btnFAQ = (Button) findViewById(R.id.btnFAQ);
+        btnFAQ.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FAQActivity.class));
             }
         });
 
 
-        button8 = (Button) findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,FAQActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        button7 = (Button) findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent( MainActivity.this,EventActivity.class);
-                startActivity(intent);
-            }
-        });
-        button6 = (Button) findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,AlertActivity.class);
-                startActivity(intent);
-            }
-        });
-        button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
-                startActivity(intent);
-            }
-
-        });
    }
 }
