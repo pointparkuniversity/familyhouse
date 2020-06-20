@@ -1,7 +1,0 @@
-#Wed Jun 17 16:34:12 EDT 2020
-base.0=/Users/jseaman/Downloads/Android_Sandbox-master 2/FamilyHouse/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
-path.1=classes.dex
-renamed.1=classes2.dex
-path.0=classes.dex
-renamed.0=classes.dex
-base.1=/Users/jseaman/Downloads/Android_Sandbox-master 2/FamilyHouse/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
