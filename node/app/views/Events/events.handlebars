@@ -9,8 +9,13 @@
  margin-top: -150px;
 }
 </style>
+
+
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
 <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+
+<script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/datetime-moment.js"></script>
 
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
@@ -86,8 +91,10 @@
 <script>
 
 $(document).ready( function () {
-
-     $('#events_table').DataTable();
+  $.fn.dataTable.moment("MMMM DD YYYY");
+  $('#events_table').DataTable({
+    "order": [[ 1, "desc" ]]
+  });
 });
 
 function createEvent(){
