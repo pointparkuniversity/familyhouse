@@ -5,3 +5,4 @@ node.core
 .env
 /modulefour
 log/
+data/

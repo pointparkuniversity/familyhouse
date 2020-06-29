@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-6 col-xs-12">
             <div class="container" style="text-align: center; margin-top: 20px;">
-                <form action="/save_event_details" method="POST"   id="events_details">
+                <form action="/save_event_details" enctype="multipart/form-data" method="POST" id="events_details">
                     <input type="hidden" name="Id" value="{{ event.Id }}" />
                     <input  type="hidden" name="user" value="{{user}}" />
                     <button type="submit" value="submit" class="btn family_house_color_schema" style="float: right;">Save</button>
@@ -25,8 +25,12 @@
                        <option value="2">Shadyside</option>
                        <option value="3">University Place</option>
                    </select> <br /><br />
-                   <h4>Attach Picture</h4>
-                   <input class="form-control" type="file" name="file" /><br />
+                   <h4>Attach Image</h4>
+                   <input class="form-control" type="file" name="image"><br>
+                   {{#if event.image}}
+                   <!--{{event.image}}<br>-->
+                   <img style="max-width: 100%; height: auto;" src="/events/{{event.Id}}/image"></img><br>
+                   {{/if}}
                 </form>
             </div>
         </div>
