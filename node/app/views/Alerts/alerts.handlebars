@@ -1,6 +1,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
 <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
 
+<script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/datetime-moment.js"></script>
+
 <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 <div class="events-page">
@@ -13,8 +16,8 @@
         <table id="alerts_table" class="table display hoverable" style="margin-top: 20px;">
       	<thead class="family_house_color_schema">
       		<tr class="">
-      			<th>Alert Title</th>
-      			<th>Alert Date</th>
+                <th>Alert Title</th>
+                <th>Alert Date</th>
                 <th>Connected To Event</th>
                 <th>Created User</th>
                 <th>Modified User</th>
@@ -57,11 +60,11 @@
                     <div class="col-sm-6 col-xs-12">
                         <label for="title">Alert Title</label>
                         <div>
-                          <a href="javascript:addIcon('❄️')">❄️</a>
-                          <a href="javascript:addIcon('🌧')">🌧</a>
-                          <a href="javascript:addIcon('🚐')">🚐</a>
-                          <a href="javascript:addIcon('⚠️')">⚠️</a>
-                          <a href="javascript:addIcon('🔔')">🔔</a>
+                          <a href="javascript:addIcon(13, '❄️')">❄️</a>
+                          <a href="javascript:addIcon(13, '🌧')">🌧</a>
+                          <a href="javascript:addIcon(13, '🚐')">🚐</a>
+                          <a href="javascript:addIcon(13, '⚠️')">⚠️</a>
+                          <a href="javascript:addIcon(13, '🔔')">🔔</a>
                         </div>
                         <input id="alert_title_13" type="text" name="title" class="form-control" placeholder="Alert Title" />
                     </div>
@@ -84,7 +87,14 @@
                 <div class="form-row">
                     <div class="col-sm-12">
                         <label for="alert_text">Alert Text</label>
-                        <textarea name="alert_text" class="form-control" placeholder="Alert Text"></textarea>
+                        <div>
+                          <a href="javascript:addIcon(14, '❄️')">❄️</a>
+                          <a href="javascript:addIcon(14, '🌧')">🌧</a>
+                          <a href="javascript:addIcon(14, '🚐')">🚐</a>
+                          <a href="javascript:addIcon(14, '⚠️')">⚠️</a>
+                          <a href="javascript:addIcon(14, '🔔')">🔔</a>
+                        </div>
+                        <textarea id="alert_title_14" name="alert_text" class="form-control" placeholder="Alert Text"></textarea>
                     </div>
                 </div>
               </div>
@@ -124,8 +134,10 @@
 <script>
 
 $(document).ready( function () {
-
-     $('#alerts_table').DataTable();
+  $.fn.dataTable.moment("MMMM DD YYYY");
+  $('#alerts_table').DataTable({
+    "order": [[ 1, "desc" ]]
+  });
 });
 
 
@@ -183,7 +195,7 @@ $(document).ready( function () {
     });
   }
 
-  function addIcon(arg) {
-    $("#alert_title_13").val($("#alert_title_13").val()+arg);
+  function addIcon(id, arg) {
+    $("#alert_title_" + id).val($("#alert_title_" + id).val()+arg);
   }
 </script>
