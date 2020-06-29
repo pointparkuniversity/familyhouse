@@ -4,8 +4,7 @@ var sql = require('../../settings.js');
 const connection = mysql.createConnection(sql);
 
 
-exports.save_details = function(name, content, house, Id, user, callback){
-    console.log(Id);
+exports.save_details = function(name, content, house, Id, user, image, callback){
     //Getting Data to format our date
     var today = new Date();
     var dd = today.getDate();
@@ -22,10 +21,10 @@ exports.save_details = function(name, content, house, Id, user, callback){
     //Setting date to the date format required fopr sql
     today = yyyy+'-'+mm+'-'+dd;
 
-    var sql_run = "UPDATE Events SET house_Id=?, title=?, content=?, last_modified=?, modified_uid=? WHERE Id=?";
+    var sql_run = "UPDATE Events SET house_Id=?, title=?, content=?, last_modified=?, modified_uid=?, image=? WHERE Id=?";
     connection.query(
 		sql_run,
-        [house, name, content, today, user, Id],
+      [house, name, content, today, user, image, Id],
 		function(err, headers, fields) {
 			if(err){
 				console.log(err);

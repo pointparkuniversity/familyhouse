@@ -5,7 +5,7 @@ const connection = mysql.createConnection(sql);
 
 
 exports.getEventData = function(Id, data){
-    var sql_run = "SELECT Id, house_Id, title, content,  DATE_FORMAT(event_date, '%M %d %Y') as event_date  FROM Events WHERE Id=" + Id;
+    var sql_run = "SELECT Id, house_Id, title, content, DATE_FORMAT(event_date, '%M %d %Y') as event_date, image FROM Events WHERE Id=" + Id;
     console.log(sql_run);
     	connection.query(
     		sql_run,
