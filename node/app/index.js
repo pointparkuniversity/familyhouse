@@ -15,6 +15,7 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var path = require('path');
 var validator = require('validator');
+var formidable = require('formidable');
 
 /*
 	BMR: JUST A NOTE TO ALL.... We will not be using npm package sql for our queries... instead we will be using mysql2
@@ -274,22 +275,37 @@ app.get('/events/:Id', isAuthenticated, function(req, res) {
 
 });
 
-app.post('/save_event_details', isAuthenticated, (req, res) => {
-    var name = req.body.title;
-    var content = req.body.content;
-    var house = req.body.house;
-    var Id =  req.body.Id;
-    var user = req.body.user;
-    POST_Event.save_details(name, content, house, Id, user, function(status, message){
-        if(status == true){
-            res.redirect("/events/" + Id);
-            req.session.faq_update_success = message;
-        }else{
-            res.redirect("/events/" + Id);
-            req.session.faq_update_bad = message;
+app.get('/events/:Id/image', isAuthenticated, function(req, res) {
+  var Id = req.params.Id;
+  GET_Events.getEventData(Id, function(data) {
+    res.sendFile(__dirname + "/data/event:" + Id + ":" + data.content[0].image);
+  })
+});
 
+app.post('/save_event_details', isAuthenticated, (req, res) => {
+  var form = new formidable.IncomingForm();
+  form.parse(req, function(err, fields, files) {
+    var name = fields.title;
+    var content = fields.content;
+    var house = fields.house;
+    var Id = fields.Id;
+    var user = fields.user;
+    var image = files.image.name;
+    // move file to appropriate location
+    fs.rename(files.image.path, "data/event:" + Id + ":" + image, function(err) {
+      // update database
+      POST_Event.save_details(name, content, house, Id, user, image, function(status, message){
+        if (status === true){
+          res.redirect("/events/" + Id);
+          req.session.faq_update_success = message;
         }
+        else{
+          res.redirect("/events/" + Id);
+          req.session.faq_update_bad = message;
+        }
+      });
     });
+  });
 });
 
 
