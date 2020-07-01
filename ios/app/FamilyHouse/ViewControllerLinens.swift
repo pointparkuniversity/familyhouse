@@ -115,13 +115,13 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
         
         // This tells the stepper object that the minimum value starts at 1
         stepperGuests?.minimumValue = 1
-        stepperTowels?.minimumValue = 1
-        stepperWashcloths?.minimumValue = 1
-        stepperBathmat?.minimumValue = 1
-        stepperBluebag?.minimumValue = 1
-        stepperTwinsheets?.minimumValue = 1
-        stepperQueensheets?.minimumValue = 1
-        stepperPillowcases?.minimumValue = 1
+        stepperTowels?.minimumValue = 0
+        stepperWashcloths?.minimumValue = 0
+        stepperBathmat?.minimumValue = 0
+        stepperBluebag?.minimumValue = 0
+        stepperTwinsheets?.minimumValue = 0
+        stepperQueensheets?.minimumValue = 0
+        stepperPillowcases?.minimumValue = 0
         
         // This tells the stepper object that the maximum value stops at 10
         stepperGuests?.maximumValue = 10
@@ -257,7 +257,7 @@ class ViewControllerLinens: UIViewController, UIPickerViewDataSource, UIPickerVi
               params["lastname"] = LastName?.text
         
         //var request = URLRequest(url: URL(string: "https://familyhouseadmin.org/api/v1/linens_request")!)
-        var request = URLRequest(url: URL(string: "http://familyhouse.it.pointpark.edu:3000/api/v1/linens/")!)
+        var request = URLRequest(url: URL(string: "http://familyhouse.it.pointpark.edu:3000/api/v1/linen/")!)
         request.httpMethod = "POST"
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
