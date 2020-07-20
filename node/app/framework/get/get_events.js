@@ -39,7 +39,7 @@ exports.getEventAlerts = function(Id, data){
 
 
 exports.getAllEvents = function(data){
-    var sql_run = "SELECT Id, title,  DATE_FORMAT(event_date, '%M %d %Y') as event_date, DATE_FORMAT(last_modified, '%M %d %Y') as last_modified, modified_uid FROM Events";
+    var sql_run = "SELECT Id, title, image, DATE_FORMAT(event_date, '%M %d %Y') as event_date, DATE_FORMAT(last_modified, '%M %d %Y') as last_modified, modified_uid FROM Events";
     connection.query(
 		sql_run,
 		function(err, headers, fields) {

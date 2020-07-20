@@ -568,6 +568,19 @@ app.get('/api/v1/events', function(req, res) {
   });
 });
 
+app.get('/api/v1/events/:Id/image', function(req, res) {
+  var Id = req.params.Id;
+  GET_Events.getEventData(Id, function(data) {
+    if (data.content[0].image) {
+      res.sendFile(__dirname + "/data/event:" + Id + ":" + data.content[0].image);
+    }
+    else {
+      res.status(404);
+      res.render('404');
+    }
+  })
+});
+
 app.get('/api/v1/alerts', function(req, res) {
   GET_Alerts.getAllAlerts(function(alerts){
     res.send(alerts['content']);
