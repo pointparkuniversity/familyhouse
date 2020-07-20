@@ -27,13 +27,16 @@
 	<thead>
 		<tr class="family_house_color_schema" style="">
 			<th>House Name</th>
-			<th>QTY of Queen Sheets</th>
-			<th>QTY of Twin Sheets</th>
 			<th>Room Number</th>
-			<th>QTY of Towels</th>
+                        <th>Last Name</th>
+                        <th>Number of Guests</th>
+                        <th>QTY of Towels</th>
 			<th>QTY of Washcloths</a></th>
 			<th>QTY of Bathmats</th>
-			<th>QTY of Bluebags</th>
+			<th>QTY of Blue Bags</th>
+			<th>QTY of Twin Sheets</th>
+			<th>QTY of Queen Sheets</th>
+			<th>QTY of Pillow Cases</th>
 			<th>Request Date</th>
 			<th data-orderable="false">Served?</th>
 	    </tr>
@@ -42,13 +45,16 @@
 		{{#each requests}}
 			<tr class="">
 				<td>{{Name}}</td>
-				<td>{{queensheets}}</td>
-				<td>{{twinsheets}}</td>
-				<td>{{room}}</td>
+                                <td>{{room}}</td>
+                                <td>{{lastname}}</td>
+                                <td>{{guests}}</td>
 				<td>{{towels}}</td>
 				<td>{{washcloths}}</td>
 				<td>{{bathmats}}</td>
 				<td>{{bluebag}}</td>
+				<td>{{twinsheets}}</td>
+				<td>{{queensheets}}</td>
+				<td>{{pillowcases}}</td>
 				<td>{{date}}</td>
 				<td id="{{ idlinen }}">  {{#if isServed}} Served {{else}}<button class="btn btn-primary serve_request" id="" rel="{{ idlinen }}">Complete</button> {{/if}}</td>
 			</tr>
