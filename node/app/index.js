@@ -567,7 +567,7 @@ app.get('/api/v1/events', function(req, res) {
   GET_Events.getAllEvents(function(events){
     var content = events['content'];
     content.sort(function(a, b) {
-      return new Moment(b.event_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(a.event_date, 'MMMM DD YYYY').format('YYYYMMDD');
+      return new Moment(a.event_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(b.event_date, 'MMMM DD YYYY').format('YYYYMMDD');
     });
     res.send(content);
   });
@@ -577,7 +577,7 @@ app.get('/api/v1/alerts', function(req, res) {
   GET_Alerts.getAllAlerts(function(alerts){
     var content = alerts['content'];
     content.sort(function(a, b) {
-      return new Moment(b.alert_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(a.alert_date, 'MMMM DD YYYY').format('YYYYMMDD');
+      return new Moment(a.alert_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(b.alert_date, 'MMMM DD YYYY').format('YYYYMMDD');
     });
     res.send(content);
   });
