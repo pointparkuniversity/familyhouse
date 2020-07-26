@@ -16,6 +16,7 @@ var cookieParser = require('cookie-parser');
 var path = require('path');
 var validator = require('validator');
 var formidable = require('formidable');
+const Moment = require('moment');
 
 /*
 	BMR: JUST A NOTE TO ALL.... We will not be using npm package sql for our queries... instead we will be using mysql2
@@ -564,13 +565,21 @@ app.get('/api/v1/faq', function(req, res) {
 
 app.get('/api/v1/events', function(req, res) {
   GET_Events.getAllEvents(function(events){
-    res.send(events['content']);
+    var content = events['content'];
+    content.sort(function(a, b) {
+      return new Moment(a.event_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(b.event_date, 'MMMM DD YYYY').format('YYYYMMDD');
+    });
+    res.send(content);
   });
 });
 
 app.get('/api/v1/alerts', function(req, res) {
   GET_Alerts.getAllAlerts(function(alerts){
-    res.send(alerts['content']);
+    var content = alerts['content'];
+    content.sort(function(a, b) {
+      return new Moment(a.alert_date, 'MMMM DD YYYY').format('YYYYMMDD') - new Moment(b.alert_date, 'MMMM DD YYYY').format('YYYYMMDD');
+    });
+    res.send(content);
   });
 });
 
