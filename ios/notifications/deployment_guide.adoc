@@ -9,4 +9,11 @@
 XCode
 Android Studio
 Miradore
+IOS Developer Account
+Playstore Developer Account
 ```
+
+## Setup Environment
+- Download the CSR from Miradore
+![Download the CSR](https://resources.miradore.com/wp-content/uploads/2020/06/Screen1.png)
+
