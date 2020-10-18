@@ -16,5 +16,4 @@ Playstore Developer Account
 ## Setup Environment
 - Download the CSR from Miradore
 ![CSR](https://resources.miradore.com/wp-content/uploads/2020/06/Screen1.png)
-![Login](https://github.com/jeffreyjseamanppu/AttendancePPUWeb/blob/master/img/img_login.png)
 
