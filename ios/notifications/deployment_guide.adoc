@@ -1,0 +1,5 @@
+# Deployment Guide for IOS/Android
+**Deployment** is a process that allows deploying of the IOS/Android app via ad-hoc for testing purposes to the devices that is being tested.
+
+## Current Version
+1.0
